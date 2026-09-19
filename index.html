@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Untukmu</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+    <!-- HALAMAN 1: AMPLOP -->
+    <section id="envelope-section" class="active">
+        <div class="envelope" onclick="openLetter()">
+            <div class="envelope-content">
+                <p class="to-text">UNTUK</p>
+                <h2 class="name">Syifa</h2>
+                <p class="click-text">🤍 KETUK UNTUK BUKA 🤍</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HALAMAN 2: SURAT -->
+    <section id="letter-section" class="hidden">
+        <div class="letter-container">
+            <h1 class="letter-title">Dear <span>Syifa</span></h1>
+            <div class="letter-content">
+                <p>For Syifa,</p>
+                <p>Sayang, jujur aku ga pernah jago buat bikin surat-surat romantis, tapi ini aku serius buat minta maaf ke kamu....</p>
+                <p>Aku mau mulai dari minta maaf dulu...</p>
+                <!-- Kamu bisa menambahkan teks surat yang panjang di sini -->
+                <p>Sayang maaf... aku nyuruh bobo mulu tapi serius itu karena aku sayang, sayang, sayang bangeg sama kamuuu. Kamu besok mau SBH kann, terus kamu masih nugas, bobo malem banget takut kamu sskit, nanti ngantuk jadi ga fit sayaaaang, tapi maafin aku yaaa😕😕</p>
+                <p>Suratnya gabisa panjang-panjang, aku kehabisan kata-kata... tapi serius demi apapun, aku cinta kamuuu.</p>
+                <p><em>I Love You Syifa Apriliana Nur Khazanah.</em></p>
+            </div>
+            <button class="next-btn" onclick="openBubbleWrap()">Lanjut 🤍</button>
+        </div>
+    </section>
+
+    <!-- HALAMAN 3: BUBBLE WRAP -->
+    <section id="bubble-section" class="hidden">
+        <div class="bubble-container">
+            <h2>Bubble wrap <span>buat kamu.</span></h2>
+            <p class="subtitle">Pecahin bubble buat baca kejutan kecil. Anti-stress, anti-bosan, anti-galau.</p>
+            
+            <div class="progress-container">
+                <p>PROGRESS</p>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="bubble-grid" id="bubble-grid">
+                <!-- Bubbles akan di-generate via JavaScript -->
+            </div>
+
+            <div id="final-message" class="hidden">
+                <h3>I Love You, Syifaaa. 🤍</h3>
+                <p>Semoga harimu lebih baik ya!</p>
+            </div>
+
+            <div class="action-buttons">
+                <button class="reset-btn" onclick="resetBubbles()">Reset Bubble</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="scriptd.js"></script>
+</body>
+</html>
